@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CLI Utility Suite</title>
+</head>
+<body>
+    <h1>Utility Suite</h1>
+
+    <h2>Check Prime</h2>
+    <form action="/prime" method="post">
+        <input type="number" name="number" required>
+        <button type="submit">Check</button>
+    </form>
+    {{ prime_result }}
+
+    <h2>Count Digits</h2>
+    <form action="/digits" method="post">
+        <input type="number" name="number" required>
+        <button type="submit">Count</button>
+    </form>
+    {{ digit_result }}
+
+    <h2>Check Character</h2>
+    <form action="/char" method="post">
+        <input type="text" name="char" maxlength="1" required>
+        <button type="submit">Check</button>
+    </form>
+    {{ char_result }}
+
+</body>
+</html>
